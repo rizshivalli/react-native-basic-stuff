@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
 interface CenterProps {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 const Center: React.FC<CenterProps> = ({ children }) => {
