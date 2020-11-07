@@ -1,13 +1,14 @@
+import { Center } from '@src/Components';
 import React from 'react';
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 
 interface LoginProps {}
 
 const Login: React.FC<LoginProps> = ({}) => {
   return (
-    <View>
+    <Center>
       <Text>Login screen</Text>
-    </View>
+    </Center>
   );
 };
 
