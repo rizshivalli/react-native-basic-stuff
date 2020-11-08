@@ -1,12 +1,9 @@
 import { Center } from '@src/Components';
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Button, Text } from 'react-native';
+import { AuthNavProps } from '@Screens/AuthScreens/AuthPropsList';
 
-interface LoginProps {
-  navigation: any;
-}
-
-const Login: React.FC<LoginProps> = ({ navigation }) => {
+const Login = ({ navigation, route }: AuthNavProps<'Login'>) => {
   return (
     <Center>
       <Text>Login screen</Text>

@@ -1,12 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { AuthNavProps } from '@Screens/AuthScreens/AuthPropsList';
 
-interface RegisterProps {}
-
-const Register: React.FC<RegisterProps> = ({}) => {
+const Register = ({ navigation, route }: AuthNavProps<'Register'>) => {
   return (
     <View>
-      <Text>Register</Text>
+      <Text>Route Name {route.name}</Text>
     </View>
   );
 };
