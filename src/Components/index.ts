@@ -1,3 +1,5 @@
 import Center from './Center';
+import PaperTextInput from './PaperTextInput';
+import Loader from './Loader';
 
-export {Center};
+export { Center, PaperTextInput, Loader };
