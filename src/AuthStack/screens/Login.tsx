@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
+  buttonContainer: { flex: 1, flexDirection: 'row', justifyContent: 'center' },
 });
 
 const Login = ({ navigation }: AuthNavProps<'Login'>) => {
@@ -67,7 +68,7 @@ const Login = ({ navigation }: AuthNavProps<'Login'>) => {
         secureTextEntry={true}
         onChangeText={(text) => setPassword(text)}
       />
-      <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+      <View style={styles.buttonContainer}>
         <Button
           onPress={() => {
             if (email && password) {

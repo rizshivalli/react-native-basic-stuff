@@ -1,15 +1,15 @@
 import { Center } from '@src/Components';
 import { HomeStackNavProps } from '@srcHomeStack/HomeParamsList';
 import React from 'react';
-import { FlatList } from 'react-native-gesture-handler';
 import { Card } from 'react-native-paper';
 import faker from 'faker';
+import { StyleSheet, FlatList } from 'react-native';
 
 const Feed = ({ navigation }: HomeStackNavProps<'Feed'>) => {
   return (
     <Center>
       <FlatList
-        style={{ width: '100%', padding: 10 }}
+        style={styles.flatList}
         renderItem={({ item }) => {
           return (
             <Card
@@ -33,4 +33,7 @@ const Feed = ({ navigation }: HomeStackNavProps<'Feed'>) => {
   );
 };
 
+const styles = StyleSheet.create({
+  flatList: { width: '100%', padding: 10 },
+});
 export default Feed;

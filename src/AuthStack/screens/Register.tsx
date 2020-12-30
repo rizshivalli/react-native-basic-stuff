@@ -1,4 +1,5 @@
-import React, { FC, useContext, useState } from 'react';
+import { AuthNavProps } from '@src/AuthStack/AuthParamList';
+import React, { useState } from 'react';
 import {
   View,
   Alert,
@@ -8,7 +9,7 @@ import {
   Text,
 } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
-import { AuthNavProps } from '../AuthParamList';
+
 const Register = ({ navigation }: AuthNavProps<'Register'>) => {
   const [email, setEmail] = useState(''),
     [password, setPassword] = useState(''),

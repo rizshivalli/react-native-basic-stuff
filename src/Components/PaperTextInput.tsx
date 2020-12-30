@@ -7,7 +7,6 @@ interface PaperTextInputProps {
   label: string;
   value: string;
   onChangeText: (value: string) => void;
-
   [rest: string]: any;
 }
 
